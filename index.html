@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My one page website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav-left" id="dropdownid">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right "><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right "><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownid");
+            if(x.className === "topnav-left")
+            {
+                x.className +=" responsive";
+            } else{
+                x.className = "topnav-left";
+            }
+        }
+    </script>
+</body>
+</html>
